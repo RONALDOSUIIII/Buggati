@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bugatti Gallery</title>
+	<style>
+		/* Global Styles */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			background-color: #f1f1f1;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+		/* Header Styles */
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+		.logo {
+			float: left;
+			font-size: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-right: 20px;
+		}
+		.nav {
+			float: right;
+			list-style: none;
+			margin-top: 10px;
+		}
+		.nav li {
+			display: inline-block;
+			margin-left: 20px;
+		}
+		.nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 5px 10px;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+		.nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+		/* Gallery Styles */
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 20px;
+		}
+		.gallery img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+			transition: all 0.3s ease;
+		}
+		.gallery img:hover {
+			transform: scale(1.1);
+		}
+		@media screen and (min-width: 768px) {
+			.gallery img {
+				width: 50%;
+				margin-right: 20px;
+			}
+			.gallery img:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+		@media screen and (min-width: 1200px) {
+			.gallery img {
+				width: 33.333%;
+			}
+			.gallery img:nth-child(3n) {
+				margin-right: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="logo">Bugatti Gallery</div>
+			<nav>
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="gallery">
+				<img src="https://cdn.pixabay.com/photo/2018/12/23/15/34/bugatti-3894624_960_720.jpg" alt="Bugatti 1">
+				<img src="https://cdn.pixabay.com/photo/2015/09/02/12/59/bugatti-918410
